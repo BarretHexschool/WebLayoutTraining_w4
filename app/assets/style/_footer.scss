@@ -1,0 +1,146 @@
+footer {
+  background: $c_min;
+  padding-top: 48px;
+  padding-bottom: 32px;
+
+  .nav-social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+  }
+
+  .nav {
+    font-size: $fz_s-s;
+
+    a {
+      padding: 12px 24px;
+      font-size: $fz_s-s;
+    }
+  }
+
+  .social {
+    display: flex;
+
+    img {
+      margin-left: 32px;
+      width: 48px;
+    }
+    a:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .contact {
+    margin-bottom: 24px;
+    li {
+      margin-bottom: 8px;
+    }
+
+    a {
+      font-size: $fz_2l;
+      color: $c_white;
+      vertical-align: middle;
+      &:hover {
+        font-weight: 500;
+        opacity: 0.8;
+      }
+    }
+
+    span {
+      margin-right: 20px;
+    }
+  }
+  .privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid $c_white;
+    padding-top: 32px;
+    p {
+      font-size: $fz_s-s;
+      color: $c_white;
+      line-height: 1.3125;
+    }
+    ul {
+      display: flex;
+    }
+    li {
+      margin-left: 48px;
+    }
+    a {
+      font-size: $fz_xs;
+      color: $c_white;
+      &:hover {
+        font-weight: 500;
+        opacity: 0.8;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  footer {
+    .social {
+      img {
+        margin-left: 16px;
+        width: 40px;
+      }
+    }
+    .nav {
+      a {
+        padding: 8px 24px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 425px) {
+  footer {
+    padding-top: 24px;
+    padding-bottom: 16px;
+    .footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .nav-social {
+      justify-content: flex-end;
+    }
+    .nav {
+      display: none;
+    }
+    .social {
+      img {
+        width: 24px;
+        margin-left: 8px;
+      }
+    }
+    .contact {
+        order: -1;
+        margin-bottom: 16px;
+      a {
+        font-size: $fz_s-s;
+      }
+    }
+    .privacy {
+      flex-direction: column;
+      align-items: flex-start;
+      padding-top: 16px;
+      p {
+        font-size: $fz_s-s;
+        margin-bottom: 8px;
+      }
+      ul {
+        flex-direction: column;
+      }
+      li {
+        margin-left: 0;
+        margin-bottom: 8px;
+      }
+      a {
+        font-size: $fz_s-s;
+      }
+    }
+  }
+}
